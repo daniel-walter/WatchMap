@@ -1,0 +1,389 @@
+﻿<html>
+<head>
+<! DOCTYPE html>
+
+<STYLE type="text/css">
+
+/*
+	Name: Smashing HTML5
+	Date: July 2009
+	Description: Sample layout for HTML5 and CSS3 goodness.
+	Version: 1.0
+	Author: Enrique Ramírez
+	Autor URI: http://enrique-ramirez.com
+*/
+ 
+/* Imports */
+@import url("reset.css");
+@import url("global-forms.css");
+ 
+/***** Global *****/
+/* Body */
+	body {
+		background: #F5F4EF url('../imgs/back.jpg') no-repeat;
+		background-size: 100%;
+		color: #000305;
+		font-size: 87.5%; /* Base font size: 14px */
+		font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		line-height: 1.429;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
+ 
+/* Headings */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}	/* 14px */
+ 
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+ 
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+	color: #C74350;
+	padding: 0 1px;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	background-color: #C74350;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;
+}
+ 
+/* Paragraphs */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+ 
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+ 
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+ 
+/* Lists */
+ul {
+	list-style: outside disc;
+	margin: 1em 0 1.5em 1.5em;
+}
+ 
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+ 
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+ 
+/* Quotes */
+blockquote {font-style: italic;}
+cite {}
+ 
+q {}
+ 
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+ 
+	/* Thead */
+	thead th {padding: .5em .4em; text-align: left;}
+	thead td {}
+ 
+	/* Tbody */
+	tbody td {padding: .5em .4em;}
+	tbody th {}
+ 
+	tbody .alt td {}
+	tbody .alt th {}
+ 
+	/* Tfoot */
+	tfoot th {}
+	tfoot td {}
+ 
+
+
+
+
+
+
+
+.body {
+clear: both;
+margin: 0 auto;
+width: 800px;
+}
+
+
+
+
+
+header, section, footer, aside, nav, article, figure {
+
+display: block;
+
+}
+
+
+
+
+/*
+	Header
+*****************/
+#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+}
+ 
+	/* Banner */
+	#banner h1 {font-size: 3.571em; line-height: 1;}
+	#banner h1 a:link, #banner h1 a:visited {
+		color: #000305;
+		display: block;
+		font-weight: bold;
+		margin: 0 0 .6em .2em;
+		text-decoration: none;
+		width: 427px;
+	}
+	#banner h1 a:hover, #banner h1 a:active {
+		background: none;
+		color: #C74350;
+		text-shadow: none;
+	}
+ 
+	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+	
+	/* Main Nav */
+	#banner nav {
+		background: #000305;
+		font-size: 1.143em;
+		height: 40px;
+		line-height: 30px;
+		margin: 0 auto 2em auto;
+		padding: 0;
+		text-align: center;
+		width: 800px;
+		
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav li {float: left; display: inline; margin: 0;}
+	
+	#banner nav a:link, #banner nav a:visited {
+		color: #fff;
+		display: inline-block;
+		height: 30px;
+		padding: 5px 1.5em;
+		text-decoration: none;
+	}
+	#banner nav a:hover, #banner nav a:active,
+	#banner nav .active a:link, #banner nav .active a:visited {
+		background: #C285FF;
+		color: #fff;
+		text-shadow: none !important;
+	}
+	
+	/*#banner nav li:first-child a {
+		border-top-left-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-webkit-border-top-left-radius: 5px;
+		
+		border-bottom-left-radius: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+	}
+	*/
+	
+	
+	
+/*
+	Featured
+*****************/
+#featured {
+	background: #fff;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px;
+	width: 760px;
+ 
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+ 
+#featured figure {
+	border: 2px solid #eee;
+	float: right;
+	margin: 0.786em 2em 0 5em;
+	width: 248px;
+}
+#featured figure img {display: block; float: right;}
+ 
+#featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+ 
+#featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
+#featured h3 a:hover, #featured h3 a:active {color: #fff;}
+ 
+/*
+	Body
+*****************/
+#content {
+	background: #fff;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px 20px;
+	width: 760px;
+ 
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+	#foooter {
+		background: #000305;
+		font-size: 1.143em;
+		height: 40px;
+		line-height: 30px;
+		margin: 0 auto 2em auto;
+		padding: 0;
+		text-align: center;
+		position: bottom;
+		size: 100%, 100%;
+		
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+</STYLE>
+	
+
+</head>
+<body>
+<aside id="featured" class="body"><article>
+
+
+<ul>
+
+<section>
+	<header><h1>AMIS - Agentursystem</h1></header>
+	<ul>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=31974&stxt=basisversorgung&spos=98">Datum der letzten Basisversorgung ist nicht aktuell</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=6013&stxt=6013&spos=100">Anlegen eines neuen Anwenders</a></li>
+
+	</ul>
+</section>
+
+<section>
+	<h1>Probleme in der Agentur</h1>
+	<ul>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=40535">RV Probleme bei AGN Routern</a></li>
+
+	</ul>
+</section>
+
+<section>
+	<header><h1>ZOVI</h1></header>
+	<ul>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=22623&stxt=gemeldete%20verarbeitungsfehler&spos=89">Gemeldete Verarbeitungsfehler</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=24159&stxt=24159&spos=100">Es kann keine Prüfung auf Aktualisierungsbedarf durchgeführt werden</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=36101&stxt=36101&spos=100">Details: SQL Error Code: XXX </a></li>
+
+	</ul>
+</section>
+
+<section>
+	<header><h1>UMTS / Mobile Lösung</h1></header>
+	<ul>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=39127&stxt=umts&spos=75">Die Schaltfläche UMTS ist deaktiviert</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=40198&stxt=umts&spos=50">Fehler beim Tunnelaufbau / IKE Negotiation mit Gateway</a></li>
+
+
+	</ul>
+</section>
+
+<section>
+	<header><h1>WIN7</h1></header>
+	<ul>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=38705&stxt=stationskonfiguration&spos=100">Stations-Konfiguration</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=18574&stxt=stationskonfiguration&spos=58">Netzdrucker am Einzelplatz einrichten</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=10378&stxt=stationskonfiguration&spos=50">Der Rechner ist im falschen Netz</a></li>
+	<li><a href="http://kms.agis.allianz/kms/?rid=17">Installation der Scan Software für Lexmark X464 de </a></li>
+	<li><a href="http://kms.agis.allianz/kms/?rid=17">Kennwort abgelaufen nach der Smartcard Anmeldung</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=28147&stxt=die%20webseite%20kann%20nicht%20angezeigt%20werden&spos=90">Webseite kann nicht angezeigt werden</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=16713">Die angegebene Karte erfordert.... Sie konnten nicht angemeldet werden... </a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=10514">Fehler beim Aufruf Zentrale Dokumente</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=39080&stxt=windrins&spos=100">WINDRINS2.exe - Fehler bei Auftragsbearbeitung</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=39153&stxt=windrins&spos=50">WINDRINS2.exe - Druckobjekt nicht gefunden </a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=39315">Datensicherung: LW existiert nicht oder Netzlaufwerk konnte nicht verbunden werden </a></li>
+	
+
+	</ul>
+</section>
+
+<section>
+	<header><h1>Hardware / Konfiguration</h1></header>
+	<ul>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=38803&stxt=38803&spos=100">Info nachreichen / Ticket beim externen Provider</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=19535&stxt=mehraufwand&spos=100">Genehmigung von Mehraufwänden bei Technikereinsatz vor Ort</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=18573&stxt=u-pad%20konfiguration&spos=50">Signatur Pad wird nicht erkannt</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=27193&stxt=u-pad&spos=41">Wie Testet man das U-Pad</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=18230&stxt=u-pad&spos=94">Defekt eines Signatur Pad</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=7919&stxt=drucker%20defekt&spos=60">Defekt eines Druckers </a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=8015&stxt=8015&spos=100">Defekt eines Monitors</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=8033&stxt=defekt%20eines%20notebooks&spos=33">Defekt eines Notebooks</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=8153&stxt=defekt%20eines%20notebooks&spos=83">Notebook Akku defekt</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=8331&stxt=kabel%20defekt&spos=50">Defekt von Kabeln und Verkabelung</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=7846&stxt=7846&spos=100">Verlust oder Diebstahl von Verkabelung</a></li>
+	</ul>
+</section>
+
+<section>
+	<header><h1>Sonstige</h1></header>
+	<ul>
+	<li><a href="http://kms.agis.allianz/kms/components/hitlist.php?rid=17&time=12&anz=20">Top 20 der letzten 24h</a></li>
+	<li><a href="http://kms.agis.allianz/kms/components/new_pages/new_pages_17.html">Neue Seiten</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=38663&stxt=windows%207%20sonstige&spos=11">sonstige Fehler Windows 7</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=23372">Routing von Tickets</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=8034&stxt=8034&spos=100">Bestellung einer Smartcard</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=36744&stxt=zertifikatsl%F6sung&spos=100">AMOS - Zertifikatslösung</a></li>
+	<li><a href="http://kms.agis.allianz/kms/nav/page.php?pid=25653&stxt=bid%20strukturen&spos=63">BID Strukturen</a></li>
+	
+	</ul>
+</section>
+
+
+
+</ul>
+
+
+
+<article></aside>
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+</body>
+</html>
